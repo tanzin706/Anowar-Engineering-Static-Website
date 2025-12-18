@@ -139,7 +139,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand">
                 
                     <img src="media/header/Screenshot_11.png" alt="Company Name" height="50">
                 
@@ -330,6 +330,8 @@
                     <p class="section-subtitle">Explore our range of quality products</p>
                 </div>
             </div>
+
+            
             <div class="row g-4">
                 
                 <div class="col-lg-4 col-md-6">
@@ -348,8 +350,54 @@
                 </div>
                 
             </div>
+            
+
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#allProductsModal">
+                        Show all items
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- All Products Modal -->
+    <div class="modal fade" id="allProductsModal" tabindex="-1" aria-labelledby="allProductsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="allProductsModalLabel">All Products</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row g-4">
+                            
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card product-card h-100 shadow-sm">
+                                    
+                                    <img src="media/products/WhatsApp_Image_2025-04-23_at_2.41.07_PM_1.jpeg" alt="Item 1" class="card-img-top" style="height: 200px; object-fit: cover;">
+                                    
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Item 1</h5>
+                                        <p class="card-text flex-grow-1"><p>something</p></p>
+                                        <div class="mt-auto">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
 
     <!-- Services Section -->
